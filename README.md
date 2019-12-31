@@ -1,7 +1,10 @@
 # Grapefruit-and-Orange-Predictor-
 Project Report
-Models	Neural Network	Random Forest	Stacked
-AUC	0.92	0.965	0.98
+
+# Models AUC:
+Neural Network: 0.92
+Random Forest: 0.965
+Stacked: 0.98
 
 For the neural net implementation, we decided to train it using all of the features. Separating the data based on discrete features or binary features does not provide any improvement when training the neural net. We trained the neural net using the mltools package provided to us by the professor. We had it learn on our training data and checked our performance with our validation data. Some key parameters that were set was that we only used one hidden layer which had 100 nodes within that hidden layer. We did various testing and found that more nodes did not give us better performance and more layers usually worsened our performance. Then when setting the activation feature, we decided to use a logistic function as that one provides the smoothest curve. The tank function since it as just a scaled sigmoid was able to run faster and found better results on the training data but did poorly on the validation data. Some of the last hyper parameters we set was the stoptol and stepsize. We set these in a way to take smaller steps and not stop immediately. We wanted the neural net to run many iterations and not stop early.
 
